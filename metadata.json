@@ -1,0 +1,5 @@
+{
+  "name": "AI Medical Image Classifier",
+  "description": "A web application that uses AI to classify medical images, providing predictions with confidence scores and visual explanations using Grad-CAM heatmaps. It includes features for batch uploads, prediction history, and model performance visualization.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Medical Image Classifier</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'brand-primary': '#14b8a6', // teal-500
+              'brand-secondary': '#6366f1', // indigo-500
+              'light-bg': '#f0f9ff', // sky-50
+              'dark-bg': '#1e293b', // slate-800
+              'light-card': 'rgba(255, 255, 255, 0.6)',
+              'dark-card': 'rgba(30, 41, 59, 0.6)',
+            },
+            animation: {
+              'border-pulse': 'border-pulse 2s infinite',
+            },
+            keyframes: {
+              'border-pulse': {
+                '0%, 100%': { 'border-color': 'rgba(20, 184, 166, 0.8)' },
+                '50%': { 'border-color': 'rgba(99, 102, 241, 0.8)' },
+              },
+            },
+          },
+        },
+      };
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.16.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.1.2",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.542.0",
+    "react-dropzone": "https://aistudiocdn.com/react-dropzone@^14.3.8"
+  }
+}
+</script>
+</head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
